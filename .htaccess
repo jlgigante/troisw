@@ -1,0 +1,6 @@
+SetEnv PHP_VER 5_TEST
+SetEnv REGISTER_GLOBALS 0
+
+RewriteEngine On
+#RewriteBase /site
+RewriteRule ^$ /site/ [L]
