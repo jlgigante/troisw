@@ -3,7 +3,7 @@
 
 
 
-<dl>
+<dl id="menu">
 	<dt><a href="#art2" class="scroll">site web</a></dt>
 	<dd>| jeu concours, application</dd>
 	
@@ -20,9 +20,10 @@
 	<dd>| régie web, opération spéciale</dd>
 </dl>
 
-<div id="top">
-	top
-</div>
+
+
+
+
 <!--
 
 
@@ -50,21 +51,6 @@
 	{literal}
 	$(document).ready(function(){ 
 		//$('.menuPlus').hide();
-		$('dt').hover(function(){
-/* 			alert( $(this).attr('href') ) ; */
-			$(this).next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
-/* 			$(this).next().addClass('open', 800, 'easeOutExpo'); */
-			
-		}, function(){
-			//alert( $(this).next().css('margin-left') );
-			
-			$(this).next().stop().animate({ 'opacity':0, 'margin-left':'400px'}, 1800, 'easeOutExpo');
-/* 			$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
-			
-		});
-		
-
-		
 		
 		$(document).scroll(function(){
 			var position = $('#ref').offset();
@@ -73,16 +59,57 @@
 			
 			if(position.top >= 800 && position.top <= 1400)
 			{
-/* 				alert(55); */
-				//$('dl dt:nth-child(1)').next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
 				$('dl dt:nth-child(1)').next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
-							
 			}	
 			else{
 				$('dl dt:nth-child(1)').next().stop().animate({ 'opacity':0, 'margin-left':'400px'}, 1800, 'easeOutExpo');
 			}
 				
 		});
+		
+	
+		//alert( $('dt:nth-child(1n+2)').html() );
+		
+		//compte le nb d'item menu permier niveau
+		var nbMenuItem = $('dl dt > *').length;
+		
+		
+		
+		
+		$('dt').hover(function(){
+/* 			alert( $(this).attr('href') ) ; */
+			
+			
+			
+			var href = $(this).children('.scroll').attr('href');
+			
+			//alert(href.children('.scroll').attr('href'));
+					
+			
+			$(this).next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
+/* 			$(this).next().addClass('open', 800, 'easeOutExpo'); */
+			
+		}, function(){
+			//alert( $(this).next().css('margin-left') );		
+			
+			var href = $(this).children('.scroll').attr('href');
+						
+			var href = $(this).children('.scroll').attr('href');
+				//alert(href);
+				$(this).css({'margin-left':'0px', 'opacity':1});
+			
+			
+			//alert( href );
+				
+			$(this).next().stop().animate({ 'opacity':0, 'margin-left':'400px'}, 1800, 'easeOutExpo');
+/* 			$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
+			
+		});
+		
+
+		
+		
+		
 		
 
 		/*
