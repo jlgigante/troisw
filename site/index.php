@@ -1,5 +1,7 @@
 <?php
-/* var_dump($_SERVER); */
+/* var_dump($_SERVER); 
+encore un test
+*/
 include("include/smarty_conf.php");
 
 $param = $_POST;
