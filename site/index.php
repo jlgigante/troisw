@@ -9,7 +9,6 @@ if( isset($param) and !empty($param) )
 	
 	$errors = array();
 	
-	
 	$errors['nom'] = ( !isset($param['nom']) or empty($param['nom']) ) ? 'Nom invalide' : FALSE;
 	$errors['prenom'] = ( !isset($param['prenom']) or empty($param['prenom']) ) ? 'Prenom invalide' : FALSE;
 	$errors['email'] = ( !isset($param['email']) or empty($param['email']) ) ? 'Email invalide' : FALSE;
