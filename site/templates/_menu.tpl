@@ -56,7 +56,7 @@
 /* 			$(this).next().addClass('open', 800, 'easeOutExpo'); */
 			
 		}, function(){
-			alert( $(this).next().css('margin-left') );
+			//alert( $(this).next().css('margin-left') );
 			
 			$(this).next().stop().animate({ 'opacity':0, 'margin-left':'400px'}, 1800, 'easeOutExpo');
 /* 			$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
