@@ -17,6 +17,14 @@
 		<h1>Attends</h1>
 	</div>
 
+
+<div id="myTop" style="width:100%; background: black; position:fixed; text-align:right;">
+	<div id="top" style="float:right;">
+	top
+</div>
+</div>
+
+
 <div id="wrap" class="clearfix"  style="display:none;">
 
 	<header>	
@@ -26,6 +34,10 @@
 		<nav>
 			{include file="_menu.tpl"}
 		</nav>
+		<div id="arrow" style="background:white;width:10px; height:20px; float:left;">
+			d
+		</div>
+
 	</header>
 
 	

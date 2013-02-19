@@ -129,15 +129,16 @@ header{
 
 nav{
 	/* float: right; */
-	clear: both;
+/* 	clear: both; */
 	width: 400px;
 	position: relative;
-	margin: 92px 0px;
+	margin: 92px 0px 0px 0px;
 	font-size: 18px;
 	color: white;
 	font-variant: small-caps;
 /* 	background: red; */
 	overflow: hidden;
+	float: left;
 }
 
 nav a {
