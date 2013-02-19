@@ -1,6 +1,7 @@
 <?php
 /* var_dump($_SERVER); 
 encore un test
+Cool
 */
 include("include/smarty_conf.php");
 
