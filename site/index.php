@@ -1,4 +1,5 @@
 <?php
+/* var_dump($_SERVER); */
 include("include/smarty_conf.php");
 
 $param = $_POST;
