@@ -73,9 +73,6 @@
 		//compte le nb d'item menu permier niveau
 		var nbMenuItem = $('dl dt > *').length;
 		
-		
-		
-		
 		$('dt').hover(function(){
 /* 			alert( $(this).attr('href') ) ; */
 			
