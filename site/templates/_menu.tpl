@@ -1,9 +1,4 @@
-
-
-
-
-
-<dl id="menu">
+<dl>
 	<dt><a href="#art2" class="scroll">site web</a></dt>
 	<dd>[ jeu concours, application ]</dd>
 	
@@ -22,21 +17,14 @@
 
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-
 <script type="text/javascript">
 	{literal}
 	$(document).ready(function(){ 
 		//$('.menuPlus').hide();
 		
-		/*
-		$(document).scroll(function(){
-			var position = $('#ref').offset();	
-			$('#top').html(position.top);			
-		});
-		*/
+
 		
-	
+		
 		//alert( $('dt:nth-child(1n+2)').html() );
 		
 		//compte le nb d'item menu permier niveau

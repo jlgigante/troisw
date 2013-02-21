@@ -1,8 +1,7 @@
 {extends file="structure.tpl"}
 
 {block name="contenu"}
-<div id="ref" style="width:100%; position:fixed !important;"></div>
-
+<div id="ref" style="width:100%; position:fixed !important;">dddddd</div>
 	<article id="art1">
 		<div>
 			<h2>L'agence</h2>
@@ -36,8 +35,6 @@ A la fois agence conseil, agence créative et studio de production, TroisW vous 
 		</article>
 		
 		<article id="art3">
-		
-			<div id="arrow" style="background:white;width:10px; height:20px; font-size:50px; position:absolute;">&lt;</div>
 			<h2>Campagne Web</h2>
 			<h3>Display, Habillage, Format innovant</h3>	
 

@@ -8,6 +8,8 @@
 	<meta name="robots" content="" />
 	<!-- <base href="http://{$smarty.server.SERVER_NAME}:8888/site/" target="_blank"> -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script src="skins/js/jquery.easing.1.3.js"></script>
 	<link href="skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -18,22 +20,30 @@
 	</div>
 
 
-<div id="myTop" style="width:100%; background: black; position:fixed; text-align:right;">
-	<div id="top" style="float:right; display:none;">
-	top
-</div>
-</div>
+
 
 
 <div id="wrap" class="clearfix"  style="display:none;">
-
 	<header>	
+
+	<div id="top" style="position:absolute; ">
+		Top
+	</div>
+	
 		<div id="logo">
 				<a href="#art1" class="scroll"><span>Troiw-agenceweb</span></a>
 		</div>
-		<nav>
-			{include file="_menu.tpl"}
-		</nav>
+		
+		<div id="menu">
+			<nav>
+				{include file="_menu.tpl"}
+			</nav>
+		
+			<div id="fleche">
+			
+			</div>
+		</div>
+
 	</header>
 
 	
@@ -97,21 +107,45 @@
 	
 
 	
-	<script src="skins/js/jquery.easing.1.3.js"></script>
 	<!-- <script src="skins/js/jquery.fittext.js"></script> -->
 	
 	<script type="text/javascript">
 		{literal}
 		$(document).ready(function(){
-
+			
+			var nbArticle = $('section > article').length;
+			
+			var step = new Array(nbArticle);			
+			alert( $('section').html() );
+			/*
+for(var i = 0; i < nbArticle; i++){
+				step[i][0] = ; 
+				step[i][1] = ; 
+			}
+			
+*/
+			//alert( $('section > article').length );
 			
 			/*
-$( "#footer" ).hover(function(){
-				$('#call-to-action').show();
-			}, function(){
-				$('#call-to-action').hide();
-			});
+var step = new array();
+			step[1] = array(0, 500);
+			step[2] = array(501, 1300);
+			step[3] = array(1301, 2100);
+			step[4] = array(2101, 2900);
+			step[5] = array(2901, 3700);
+			step[6] = array(3701, 5000);
 */
+			
+/* 			alert( $('#art2').offset().top );			 */
+			
+			//Gestion du scroll et de la fleche
+			$(document).scroll(function(){
+				var position = $('#ref').offset();	
+				$('#top').html(position.top);			
+			});
+		
+			
+
 			
 			$( "#footer" ).click(function() {
 				$('#close-footer').show();
@@ -120,15 +154,7 @@ $( "#footer" ).hover(function(){
 				//return false;
 			});
 			
-			$("#close-footer").click(function(){
-				setTimeout("300", function(){
-					$(this).hide();
-					$('#footer').removeClass( "extendFooter", 300, 'easeOutExpo' );
-					return false;
-				});
-				
-				
-			});
+
 			
 			$("header, section").click( function(e) {
 				if(e.target.className !== "extendFooter")
@@ -141,13 +167,34 @@ $( "#footer" ).hover(function(){
 			
 			/*$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
 			
-		
+			//
 			$("#wait").hide();
 			$("#wrap").fadeIn();
-		
+			
+			//Function de deplacement de la fleche
+			flecheMove = function(obj){
+				var anchor = $(obj);
+				var cible  = $(obj).attr('href');				
+				var anchorPosition = anchor.position().top;
+				var indexCalage = 16;
+				var anchorPositionFinal = anchorPosition-indexCalage;
+				//
+				if(cible == '#art1'){
+					anchorPositionFinal = -60;
+				}
+				$('#fleche').stop().animate({'margin-top': anchorPositionFinal+'px'}, 800, 'easeOutExpo');
+			};
+			
+			
+			//
 			$('.scroll').bind('click',function(event){
 				var anchor = $(this);
-				var cible  = $(this).attr('href');
+				var cible  = $(this).attr('href');				
+	
+				flecheMove(this);
+				
+				
+				//
 				$('html, body').stop().animate(
 					{scrollTop: $(cible).position().top},
 					'slow', 'easeOutExpo');
