@@ -1,9 +1,7 @@
 {extends file="structure.tpl"}
 
 {block name="contenu"}
-<div id="ref" style="width:100%; position:fixed !important;">
-	
-</div>
+<div id="ref" style="width:100%; position:fixed !important;"></div>
 
 	<article id="art1">
 		<div>
@@ -22,7 +20,7 @@ A la fois agence conseil, agence créative et studio de production, TroisW vous 
 		</article>
 		
 		<article id="art2">
-			<h2>Site Web /</h2>
+			<h2>Site Web</h2>
 			<h3>Jeu Concours, Application</h3>
 
 			<p>Quel que soit le type de site, la mécanique de jeu (quiz, instant gagnant) ou le support (web, réseaux sociaux, mobile, tablette), TroisW vous propose une solution globale allant de la conception à la mise en ligne. Notre objectif : délivrer la meilleure expérience utilisateur possible tout en restant dans vos contraintes de budget et de temps.</p>
@@ -38,7 +36,9 @@ A la fois agence conseil, agence créative et studio de production, TroisW vous 
 		</article>
 		
 		<article id="art3">
-			<h2>Campagne Web /</h2>
+		
+			<div id="arrow" style="background:white;width:10px; height:20px; font-size:50px; position:absolute;">&lt;</div>
+			<h2>Campagne Web</h2>
 			<h3>Display, Habillage, Format innovant</h3>	
 
 			<p>En travaillant au sein de la régie de Skyrock.com, nous avons réalisé des centaines de campagnes pour les plus grandes marques dans des secteurs aussi variés que l'alimentaire, la banque, la beauté/cosmétique, le divertissement (cinéma, édition, jeu-vidéo, musique), l’équipement sportif, le luxe, la prévention, la restauration, la téléphonie, etc…
@@ -54,7 +54,7 @@ De la création pure à la déclinaison de formats existants, TroisW prend en ch
 		
 		<article id="art4">
 
-				<h2>Création graphique /</h2>
+				<h2>Création graphique</h2>
 
 			
 			 <h3>Identité visuelle, Logo, Illustration</h3>
@@ -67,7 +67,7 @@ De la création pure à la déclinaison de formats existants, TroisW prend en ch
 		</article>
 		
 		<article id="art5">
-			<h2>Ecosystème digital /</h2> <h3>Stratégie Internet, Communication, Réseaux sociaux</h3>
+			<h2>Ecosystème digital</h2> <h3>Stratégie Internet, Communication, Réseaux sociaux</h3>
 
 			<p>Plus que jamais, une image de marque passe par un déploiement digital efficace et des dispositifs web intégrés. 
 TroisW vous accompagne dans la création (ou l'optimisation) et la mise en place de votre écosystème digital ; de la définition de la stratégie de communication à la conception des campagnes pub, en passant par la création-développement de votre site internet, la gestion des interactions sur les différents réseaux sociaux (Facebook, Twitter, Google plus, Pinterest, etc…) et la création de contenu éditorial, iconographique, photo et vidéo.</p>
@@ -79,7 +79,7 @@ TroisW vous accompagne dans la création (ou l'optimisation) et la mise en place
 		</article>
 		
 		<article id="art6">
-			<h2>Business développement /</h2> <h3>Régie Web, Opération spéciale</h3>
+			<h2>Business développement</h2> <h3>Régie Web, Opération spéciale</h3>
 
 			<p>La communication digital possède l'avantage de délivrer une performance mesurable et quantifiable (visite, taux de clic, CPC,  taux de transformation, etc…) qui peut être transformée en source de revenu (pour les éditeurs de contenus par exemple).
 Habitué à travailler avec des régies et éditeurs web, TroisW vous aide à identifier et mettre en place des offres commerciales pertinentes et optimisées pour transformer les visites en revenus.</p>
@@ -91,52 +91,4 @@ Habitué à travailler avec des régies et éditeurs web, TroisW vous aide à id
 			</ul>
 				
 		</article>
-		
-		
-		
-		<article id="art7">
-			<h2>Contactez-nous /</h2> <p>Contactez-nous pour obtenir un devis gratuit pour votre projet</p>
-			
-			<p>
-			<form action="index.php" method="post" accept-charset="utf-8">
-				<input id="nom" type="text" name="nom" value="" placeholder="Nom" class="left-input" required="">				
-				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom" class="right-input" required="">				
-				<input id="mail" type="text" name="mail" value="" placeholder="Mail" class="left-input" required>
-				<input id="telephone" type="text" name="telephone" value="" placeholder="Téléphone" class="right-input" required>
-				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input" required>
-				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement" required></textarea>
-				
-				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button">
-				
-				
-				<iframe width="300" height="121" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" >Agrandir le plan</a></small>
-				
-			</form>
-			</p>
-			
-			<p></p>
-
-
-				
-				
-				
-				
-
-<p><b>troisW agence web</b><br/>
-62 rue Jean-Jacques Rousseau, 75002 Paris<br/>
-<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
-<b>Mail :</b> contact@troisw-agenceweb.com<br/>
-<b>Tel :</b> 06 16 04 11 74</p>
-
-
-(*champs obligatoires)
-
-
-				
-				
-				
-		</article>
-		
-		
-		
 {/block}

@@ -19,7 +19,7 @@
 
 
 <div id="myTop" style="width:100%; background: black; position:fixed; text-align:right;">
-	<div id="top" style="float:right;">
+	<div id="top" style="float:right; display:none;">
 	top
 </div>
 </div>
@@ -34,10 +34,6 @@
 		<nav>
 			{include file="_menu.tpl"}
 		</nav>
-		<div id="arrow" style="background:white;width:10px; height:20px; float:left;">
-			d
-		</div>
-
 	</header>
 
 	
@@ -50,26 +46,101 @@
 </div>
 	
 	
-	<footer class="clearfix">
-		TroisW agence web - 62 rue Jean-Jacques Rousseau, 75002 Paris  -  <a href="#">contact@troisw-agenceweb.com</a>  -  06 16 04 11 74 
+	<footer class="clearfix" id="footer">
+	
+		<div id="contact">
+			Contact
+		</div>
 		
-		<ul style="position:relative; margin-top:-100px;">
+		
+		
+		TroisW agence web - 62 rue Jean-Jacques Rousseau, 75002 Paris  -  <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a>  -  06 16 04 11 74 
+		
+		<ul>
 			<li><a href="#">twitter</a></li>
 			<li><a href="#">facebook</a></li>
 		</ul>
+		<h2>Contactez-nous</h2> <p>Contactez-nous pour obtenir un devis gratuit pour votre projet</p>
+
+		 
+		 <div id="form" style="float:left;">
+		 	<form action="index.php" method="post" accept-charset="utf-8">
+				<input id="nom" type="text" name="nom" value="" placeholder="Nom" class="left-input" required="">				
+				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom" class="right-input" required="">				
+				<input id="mail" type="text" name="mail" value="" placeholder="Mail" class="left-input" required>
+				<input id="telephone" type="text" name="telephone" value="" placeholder="Téléphone" class="right-input" required>
+				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input" required>
+				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement" required></textarea>
+				
+				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button">
+				
+				
+			</form>
+		 </div>
+		 
+		<div id="adresse" style="float:left;">
+		
+<p><b>troisW agence web</b><br/>
+62 rue Jean-Jacques Rousseau, 75002 Paris<br/>
+<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
+<b>Mail :</b> contact@troisw-agenceweb.com<br/>
+<b>Tel :</b> 06 16 04 11 74</p>
+
+
+(*champs obligatoires)
+
+			<iframe width="300" height="121" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" >Agrandir le plan</a></small>
+		</div>
+
 		 
 	</footer>
-	
-	
 	
 
 	
 	<script src="skins/js/jquery.easing.1.3.js"></script>
-	<script src="skins/js/jquery.fittext.js"></script>
+	<!-- <script src="skins/js/jquery.fittext.js"></script> -->
 	
 	<script type="text/javascript">
 		{literal}
 		$(document).ready(function(){
+
+			
+			/*
+$( "#footer" ).hover(function(){
+				$('#call-to-action').show();
+			}, function(){
+				$('#call-to-action').hide();
+			});
+*/
+			
+			$( "#footer" ).click(function() {
+				$('#close-footer').show();
+				$( this ).addClass( "extendFooter", 800, 'easeOutExpo' );
+				//$( this ).toggleClass( "extendFooter", 800, 'easeOutExpo' );
+				//return false;
+			});
+			
+			$("#close-footer").click(function(){
+				setTimeout("300", function(){
+					$(this).hide();
+					$('#footer').removeClass( "extendFooter", 300, 'easeOutExpo' );
+					return false;
+				});
+				
+				
+			});
+			
+			$("header, section").click( function(e) {
+				if(e.target.className !== "extendFooter")
+				{
+					//$(".extendFooter").hide();
+					$('#footer').removeClass( "extendFooter", 300, 'easeOutExpo' );
+					return false;
+				}
+			});
+			
+			/*$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
+			
 		
 			$("#wait").hide();
 			$("#wrap").fadeIn();
@@ -82,12 +153,10 @@
 					'slow', 'easeOutExpo');
             	event.preventDefault();
             });		
-            //
-            
-            //$("h2").fitText(1.2);
-            $("#fittext2").fitText(1.2);
-            $("h2").fitText(1.1, { minFontSize: '20px', maxFontSize: '64px' });
 		});
+		
+		
+		
 		//google Analytics
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-38583681-1']);
