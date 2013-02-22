@@ -1,7 +1,7 @@
 {extends file="structure.tpl"}
 
 {block name="contenu"}
-<div id="ref" style="width:100%; position:fixed !important;">dddddd</div>
+<div id="ref" style="position:fixed !important;"></div>
 	<article id="art1">
 		<div>
 			<h2>L'agence</h2>

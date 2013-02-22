@@ -10,22 +10,10 @@ body{
 }
 
 
-
 h1, h2, h3{
 	margin: 0px 0px 10px 0px;
 	padding: 0px;
 }
-
-/*
-h2{
-	color: #dc8c01;
-
-	text-shadow: -1px -1px 0px #b07001;
-	text-transform: uppercase;
-
-
-}
-*/
 
 h2 {
 	color: #dc8c01;
@@ -35,8 +23,6 @@ h2 {
 	display: block;
 	line-height: 56px;
 }
-
-
 h3{
 	color: #513204;
 	font-size: 24px;
@@ -209,7 +195,7 @@ article{
 	width: 300px; /* 340 */
 	min-height: 700px;
 	font-size: 12px;
-/* 	overflow: hidden; */
+	border-bottom: 1px dashed rgba(0,0,0,0.25);
 /* 	background: grey; */
 /* 	border: 1px solid black; */
 	

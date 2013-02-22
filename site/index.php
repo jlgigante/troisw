@@ -30,9 +30,7 @@ if( isset($param) and !empty($param) )
 	$smarty->assign('form_param', '');
 	
 	$quizInfos = (object) $post;
-	$smarty->assign('quizInfos', $quizInfos);
-	
+	$smarty->assign('quizInfos', $quizInfos);	
 	
 }
-
 $smarty->display('index.tpl');
