@@ -20,13 +20,10 @@
 	</div>
 
 
-
-
-
 <div id="wrap" class="clearfix"  style="display:none;">
 	<header>	
 
-	<div id="top" style="position:absolute; ">
+	<div id="top" style="position:absolute; display:none;">
 		Top
 	</div>
 	
@@ -115,33 +112,51 @@
 			
 			var nbArticle = $('section > article').length;
 			
-			var step = new Array(nbArticle);			
-			alert( $('section').html() );
-			/*
-for(var i = 0; i < nbArticle; i++){
-				step[i][0] = ; 
-				step[i][1] = ; 
+			var step = new Array();			
+			//alert( $('section').html() );
+			
+			for(var i = 1; i < nbArticle; i++){
+			var index  = 800;
+				step['art'+i] = Array(i*index, i*index); 
 			}
 			
-*/
+			
+			//alert( $('#art2').offset().top );
+			
+			
+
 			//alert( $('section > article').length );
 			
-			/*
-var step = new array();
-			step[1] = array(0, 500);
-			step[2] = array(501, 1300);
-			step[3] = array(1301, 2100);
-			step[4] = array(2101, 2900);
-			step[5] = array(2901, 3700);
-			step[6] = array(3701, 5000);
-*/
+			var step = new Array();
+			step['art1'] = Array(-300, 500);
+			step['art2'] = Array(501, 1300);
+			step['art3'] = Array(1301, 2100);
+			step['art4'] = Array(2101, 2900);
+			step['art5'] = Array(2901, 3700);
+			step['art6'] = Array(3701, 5000);
 			
-/* 			alert( $('#art2').offset().top );			 */
 			
 			//Gestion du scroll et de la fleche
 			$(document).scroll(function(){
-				var position = $('#ref').offset();	
-				$('#top').html(position.top);			
+				var refPosition = $('#ref').offset();	
+				$('#top').html(refPosition.top);		
+				
+				for(var i = 1; i < 7; i++){
+				
+					//step['art'+i] = Array(i*index, i*index); 
+					var array = step['art'+i];
+					var firstVal = array[0];
+					var secVal = array[1];
+					var myVal = 2990;
+					if (refPosition.top >= firstVal && refPosition.top <= secVal)
+					{
+						//alert('OK' + 'art'+i );
+						//$(".scroll a[href$='#art"+i+"']").css('background', 'red');
+						flecheMove("a[href$='#art"+i+"']");
+					}
+
+				}
+				
 			});
 		
 			
@@ -168,9 +183,10 @@ var step = new array();
 			/*$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
 			
 			//
-			$("#wait").hide();
-			$("#wrap").fadeIn();
 			
+			//$("#wrap").delay(1400).fadeIn(2000);
+			$("#wrap").fadeIn();
+			$("#wait").hide();
 			//Function de deplacement de la fleche
 			flecheMove = function(obj){
 				var anchor = $(obj);
@@ -189,11 +205,7 @@ var step = new array();
 			//
 			$('.scroll').bind('click',function(event){
 				var anchor = $(this);
-				var cible  = $(this).attr('href');				
-	
-				flecheMove(this);
-				
-				
+				var cible  = $(this).attr('href');
 				//
 				$('html, body').stop().animate(
 					{scrollTop: $(cible).position().top},
