@@ -10,6 +10,7 @@
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	<script src="skins/js/jquery.easing.1.3.js"></script>
+	<script src="skins/js/jquery.viewport.js"></script>
 	<link href="skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -55,51 +56,50 @@
 	
 	<footer class="clearfix" id="footer">
 	
-		<div id="contact">
-			Contact
+		<div id="contact" >
+			contact
 		</div>
 		
 		
-		
+		<div id="wrap" style="text-align:center;">
 		TroisW agence web - 62 rue Jean-Jacques Rousseau, 75002 Paris  -  <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a>  -  06 16 04 11 74 
 		
-		<ul>
+			<h2>Contactez-nous</h2>
+			<h3>Contactez-nous pour obtenir un devis gratuit pour votre projet</h3>
+			
+			<ul>
 			<li><a href="#">twitter</a></li>
 			<li><a href="#">facebook</a></li>
 		</ul>
-		<h2>Contactez-nous</h2> <p>Contactez-nous pour obtenir un devis gratuit pour votre projet</p>
+			
+			<div id="map">
+				<iframe width="380" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" >Agrandir le plan</a></small>
+				
+				
+				
+				<p><b>troisW agence web</b><br/>
+				62 rue Jean-Jacques Rousseau, 75002 Paris<br/>
+				<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
+				<b>Mail :</b> contact@troisw-agenceweb.com<br/>
+				<b>Tel :</b> 06 16 04 11 74</p>
 
-		 
-		 <div id="form" style="float:left;">
-		 	<form action="index.php" method="post" accept-charset="utf-8">
+			</div>
+			
+			<div id="form">
+				<form action="index.php" method="post" accept-charset="utf-8">
 				<input id="nom" type="text" name="nom" value="" placeholder="Nom" class="left-input" required="">				
 				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom" class="right-input" required="">				
 				<input id="mail" type="text" name="mail" value="" placeholder="Mail" class="left-input" required>
 				<input id="telephone" type="text" name="telephone" value="" placeholder="Téléphone" class="right-input" required>
 				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input" required>
 				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement" required></textarea>
-				
 				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button">
-				
-				
-			</form>
-		 </div>
-		 
-		<div id="adresse" style="float:left;">
-		
-<p><b>troisW agence web</b><br/>
-62 rue Jean-Jacques Rousseau, 75002 Paris<br/>
-<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
-<b>Mail :</b> contact@troisw-agenceweb.com<br/>
-<b>Tel :</b> 06 16 04 11 74</p>
-
-
-(*champs obligatoires)
-
-			<iframe width="300" height="121" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" >Agrandir le plan</a></small>
+				</form>
+				(*champs obligatoires)
+			</div>
+			
 		</div>
-
-		 
+			 
 	</footer>
 	
 
@@ -109,6 +109,10 @@
 	<script type="text/javascript">
 		{literal}
 		$(document).ready(function(){
+		
+			//
+			
+
 			
 			var nbArticle = $('section > article').length;
 			
@@ -123,9 +127,18 @@
 			
 			//alert( $('#art2').offset().top );
 			
-			
+			var artTest = $('#art5 > #art_end');
+/* 			alert(artTest.offset().top); */
 
-			alert( $('article').attr('id') + ' - ' +$('#art5 > #art_end').html() );
+			
+			
+			//
+			$("article .art_end").each(function() {
+				//alert('OK');// = message + $(this).attr("src") + "<br />";
+			});
+			
+			
+			//alert( $('article').attr('id') + ' - ' +$('#art5 > #art_end').html() );
 			
 			var step = new Array();
 			step['art1'] = Array(-300, 500);
@@ -138,6 +151,7 @@
 			
 			//Gestion du scroll et de la fleche
 			$(document).scroll(function(){
+				//
 				var refPosition = $('#ref').offset();	
 				$('#top').html(refPosition.top);		
 				
@@ -154,14 +168,10 @@
 						//$(".scroll a[href$='#art"+i+"']").css('background', 'red');
 						flecheMove("a[href$='#art"+i+"']");
 					}
-
 				}
-				
 			});
 		
-			
-
-			
+			//
 			$( "#footer" ).click(function() {
 				$('#close-footer').show();
 				$( this ).addClass( "extendFooter", 800, 'easeOutExpo' );
@@ -169,8 +179,7 @@
 				//return false;
 			});
 			
-
-			
+		
 			$("header, section").click( function(e) {
 				if(e.target.className !== "extendFooter")
 				{

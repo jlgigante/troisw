@@ -6,6 +6,7 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	background: url(../images/01.png) fixed;
 	text-rendering: optimizeLegibility;
+	color: #363636;
 	
 }
 
@@ -30,6 +31,7 @@ h3{
 /* 	text-shadow: -0px -0px 0px rgba(54,35,4,0.78); */
 	
 }
+
 
 .orange{
 	color: #dc8c01;
@@ -77,6 +79,8 @@ a:hover{
 	width:940px;
 	height:100%;
 }
+
+
 
 header{
 	float: left;
@@ -203,6 +207,28 @@ article{
 }
 
 
+article ul{
+	padding: 0px;
+	margin: 0px;	
+}
+
+article li{
+	background: rgba(156,106,5,0.15);
+	padding:3px;
+	margin-bottom: 5px;
+	list-style: none;
+
+	width: 100%;
+	/*
+	min-height: 70px;
+*/
+	float: left;
+	text-align: justify;
+	display: inline-block;
+	border-radius: 3px;
+	
+}
+
 article p {
 		text-align: justify;
 }
@@ -305,43 +331,60 @@ footer{
 
 	height: 400px;
 	color: white;
-	text-align: center;
+
 	font-size: 12px;
 	line-height: 38px;
 	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.69);
 	/**/
-background: -moz-linear-gradient(top,  rgba(35,21,0,0.97) 0%, rgba(67,41,2,0.97) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,21,0,0.97)), color-stop(100%,rgba(67,41,2,0.97)));
-background: -webkit-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
-background: -o-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
-background: -ms-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
-background: linear-gradient(to bottom,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7231500', endColorstr='#f7432902',GradientType=0 );
-
-
-
-
+	background: -moz-linear-gradient(top,  rgba(35,21,0,0.97) 0%, rgba(67,41,2,0.97) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,21,0,0.97)), color-stop(100%,rgba(67,41,2,0.97)));
+	background: -webkit-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
+	background: -o-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
+	background: -ms-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
+	background: linear-gradient(to bottom,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7231500', endColorstr='#f7432902',GradientType=0 );
 /* 	font-weight: 400; */
 }
 
 .extendFooter{
 	bottom:0px !important;
-
 }
+
+
+
+#form{
+	width: 470px;
+	clear: right;
+    float: left;
+    min-height: 450px;
+    background: red;
+}
+
+#map{
+		width: 470px;
+	    clear: left;
+    float: left;
+    min-height: 450px;
+    background: yellow;
+	
+}
+
 
 
 #contact{
 	position:absolute; 
-	margin:-30px 900px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	border-radius: 50px;
-	background: #DC8C01; 
-	border: 5px solid rgba(35,21,0,0.97);
-	-webkit-transform-origin: top left;
--moz-transform-origin: top left;
--o-transform-origin: top left;
-transform-origin: top left;
+	margin:-50px 46px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	background: url(../images/bt-contact.png) 0px -100px no-repeat; 
+
+	
+}
+
+#contact:hover{
+
+	background: url(../images/bt-contact.png) no-repeat; 
+
 	
 }
