@@ -20,67 +20,18 @@
 <script type="text/javascript">
 	{literal}
 	$(document).ready(function(){ 
-		//$('.menuPlus').hide();
-		
-
-
-		
-		
 		//alert( $('dt:nth-child(1n+2)').html() );
 		
 		//compte le nb d'item menu permier niveau
-		var nbMenuItem = $('dl dt > *').length;
+		//var nbMenuItem = $('dl dt > *').length;
+		//alert(nbMenuItem);
 		
-		$('dt').hover(function(){
-	
-			var href = $(this).children('.scroll').attr('href');
-			
-			//alert(href.children('.scroll').attr('href'));
-					
-			
+		
+		$('dt').hover(function(){			
 			$(this).next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
-/* 			$(this).next().addClass('open', 800, 'easeOutExpo'); */
-			
-		}, function(){
-			//alert( $(this).next().css('margin-left') );		
-			
-			var href = $(this).children('.scroll').attr('href');
-						
-			var href = $(this).children('.scroll').attr('href');
-				//alert(href);
-				$(this).css({'margin-left':'0px', 'opacity':1});
-			
-			
-			//alert( href );
-				
+		}, function(){			
 			$(this).next().stop().animate({ 'opacity':0, 'margin-left':'400px'}, 1800, 'easeOutExpo');
-/* 			$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
-			
 		});
-		
-
-		
-		
-		
-		
-
-		/*
-		$('.menu').hover(function(){
-			
-			//var premier = $('li :nth-child(2)').text();
-			//var premier = $('li a:first-child').text();
-			//alert(premier);
-			//$(this + ':last-child').show();
-			$(this).next().show();
-			
-			//$(this).next().animate({'align': 'left', 'display': 'block'}, 800);			
-		}, function(){
-			
-			//$(this).next().hide();
-
-		});
-		*/
-		
 	}); 
 	{/literal}
 </script>

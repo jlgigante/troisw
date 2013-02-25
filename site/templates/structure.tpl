@@ -125,7 +125,7 @@
 			
 			
 
-			//alert( $('section > article').length );
+			alert( $('article').attr('id') + ' - ' +$('#art5 > #art_end').html() );
 			
 			var step = new Array();
 			step['art1'] = Array(-300, 500);

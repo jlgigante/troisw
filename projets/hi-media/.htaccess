@@ -1,0 +1,5 @@
+AuthUserFile /homez.666/troiswag/www/projets/hi-media/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Accès Restreint"
+AuthType Basic
+require valid-user
