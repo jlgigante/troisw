@@ -56,9 +56,8 @@
 	
 	<footer class="clearfix" id="footer">
 	
-		<div id="contact" >
-			contact
-		</div>
+		
+			<a href="#" id="contact">contact</a>
 		
 		
 		<div id="wrap" style="text-align:center;">
@@ -172,11 +171,21 @@
 			});
 		
 			//
-			$( "#footer" ).click(function() {
-				$('#close-footer').show();
-				$( this ).addClass( "extendFooter", 800, 'easeOutExpo' );
-				//$( this ).toggleClass( "extendFooter", 800, 'easeOutExpo' );
-				//return false;
+			$( "#contact" ).toggle(function() {
+			
+				/*
+$( this).toggle(function(){
+					$(this).text('contact');
+				}, function(){
+					$(this).text('fermer');
+				});
+*/
+/* 				$( "#footer" ).toggleClass( "extendFooter", 800, 'easeOutExpo' ); */
+/* 				return false; */
+				$(this).html('fermer');
+				
+			}, function(){
+				$(this).html('contact');
 			});
 			
 		

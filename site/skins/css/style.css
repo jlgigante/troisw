@@ -325,7 +325,7 @@ footer{
 	width: 100%;
 	position : fixed;
 
-	bottom: -370px;
+	bottom: -340px;
 	left: 0;
 	right: 0;
 
@@ -378,13 +378,40 @@ footer{
 	height: 100px;
 	line-height: 100px;
 	background: url(../images/bt-contact.png) 0px -100px no-repeat; 
-
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+	font-variant: small-caps;
 	
 }
 
+/*
 #contact:hover{
-
 	background: url(../images/bt-contact.png) no-repeat; 
 
-	
+-webkit-transform: rotate(-30deg);
+-moz-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+transform: rotate(-30deg);
 }
+*/
+
+
+    #contact:hover{
+    -webkit-animation: cssAnimation 2.26s 20 linear;
+    -moz-animation: cssAnimation 2.26s 20 linear;
+    -o-animation: cssAnimation 2.26s 20 linear;
+    background: url(../images/bt-contact.png) no-repeat; 
+    }
+    @-webkit-keyframes cssAnimation {
+    from { -webkit-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    to { -webkit-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
+    }
+    @-moz-keyframes cssAnimation {
+    from { -moz-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    to { -moz-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
+    }
+    @-o-keyframes cssAnimation {
+    from { -o-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    to { -o-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
+    }
