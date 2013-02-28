@@ -6,7 +6,7 @@
 
 		<h2>L'agence</h2>
 		
-		<h3>H3</h3>
+		<h3 class="citation">&laquo;{$citation.citation}&raquo; <span class="auteur">{$citation.auteur}</span></h3>
 		<p>
 		En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. 
 A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel.</p>
@@ -14,7 +14,7 @@ A la fois agence conseil, agence créative et studio de production, TroisW vous 
 		<p>Depuis la définition de la stratégie de communication jusqu'à la mise en ligne des dispositifs web, nous intervenons sur l'ensemble de la chaine de production : conseil, conception, création graphique, création de contenus (éditorial, photo, vidéo), intégration, développement, animation, etc...</p>
 
 		<p>TroisW est le résultat de 5 années de travail (au sein de la régie du groupe Skyrock) entre un directeur de projet, un directeur artistique et un développeur web. En travaillant sur de nombreux projets réalisés pour les plus grandes marques, nous avons développé une véritable expertise digitale (notamment concernant les problématiques régies et les interactions avec les réseaux sociaux).</p>
-			<div class="art_end">Fin</div>
+
 		</article>
 		
 		<article id="art2">
@@ -31,7 +31,7 @@ A la fois agence conseil, agence créative et studio de production, TroisW vous 
 				<li>Intégration et développement (languages : PHP5, HTML5, CSS3, Javascript / jQuery, solution open sources : Wordpress, FrameWorks : Symfony).</li>
 			</ul>
 				
-			<div class="art_end">Fin</div>
+
 		</article>
 		
 		<article id="art3">
@@ -46,7 +46,7 @@ De la création pure à la déclinaison de formats existants, TroisW prend en ch
 				<li>Conception et création de Format interactif AdTech Canvas</li>
 				<li>Mise en place et gestion de campagne web Google et Facebook. Reporting et recommandations.</li>
 			</ul>
-			<div class="art_end">Fin</div>
+
 		</article>
 		
 		<article id="art4">
@@ -61,7 +61,7 @@ De la création pure à la déclinaison de formats existants, TroisW prend en ch
 			<p>Conception et création de Logo et Charte Graphique, Illustration, etc...</p>
 
 			<p>Large palette de styles graphiques selon le secteur d’activité du projet : alimentaire, banque, beauté/cosmétique, divertissement (cinéma, édition, jeu-vidéo, musique), équipement sportif, luxe, prévention, restauration, téléphonie, etc...</p>
-			<div class="art_end">Fin</div>
+			
 		</article>
 		
 		<article id="art5">
@@ -74,7 +74,7 @@ TroisW vous accompagne dans la création (ou l'optimisation) et la mise en place
 				<li>Animation / Community management. Suivi et recommandations</li>
 				<li>Production de contenu (éditorial, iconographique, vidéo)</li>
 			</ul>
-			<div class="art_end">Fin eco</div>
+
 		</article>
 		
 		<article id="art6">
@@ -88,6 +88,6 @@ Habitué à travailler avec des régies et éditeurs web, TroisW vous aide à id
 				<li>Identification de nouvelles sources de business web (régie, premium, etc…). </li>
 				<li>Conception, accompagnement et mise en place des dispositifs</li>
 			</ul>
-				<div class="art_end">Fin</div>
+
 		</article>
 {/block}

@@ -4,11 +4,21 @@ body{
 	margin: 0px 0px;
 	padding: 0px 0px;
 	font-family: 'Source Sans Pro', sans-serif;
-	background: url(../images/01.png) fixed;
 	text-rendering: optimizeLegibility;
-	color: #363636;
-	
+	color: #4b4c4c;
 }
+
+.global-bg-01{
+	background: url(../images/01.png) fixed;
+}
+.global-bg-02{
+	background: url(../images/02.png) fixed;
+}
+.global-bg-03{
+	background: url(../images/03.png) fixed;
+}
+
+
 
 
 h1, h2, h3{
@@ -30,6 +40,15 @@ h3{
 	line-height: 24px;
 /* 	text-shadow: -0px -0px 0px rgba(54,35,4,0.78); */
 	
+}
+.citation{
+	color: #333333;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+}
+.auteur{
+	font-size: 14px;
 }
 
 
@@ -75,9 +94,15 @@ a:hover{
     height: 0;
 }
 
+.text-center{
+	text-align: center;
+}
+
+
 #wrap{
 	width:940px;
 	height:100%;
+	margin: 0px auto;
 }
 
 
@@ -180,7 +205,6 @@ dd{
 	
 }
 
-
 /**/
 
 section{
@@ -202,10 +226,8 @@ article{
 	font-size: 12px;
 	border-bottom: 1px dashed rgba(0,0,0,0.25);
 /* 	background: grey; */
-/* 	border: 1px solid black; */
-	
+/* 	border: 1px solid black; */	
 }
-
 
 article ul{
 	padding: 0px;
@@ -213,20 +235,16 @@ article ul{
 }
 
 article li{
-	background: rgba(156,106,5,0.15);
-	padding:3px;
+	background: #b9b9b9;
+	padding:5px 10px 5px 10px;
 	margin-bottom: 5px;
 	list-style: none;
-
-	width: 100%;
-	/*
-	min-height: 70px;
-*/
+	width: 280px;
 	float: left;
-	text-align: justify;
+/* 	text-align: justify; */
 	display: inline-block;
 	border-radius: 3px;
-	
+	color:white;
 }
 
 article p {
@@ -237,25 +255,31 @@ article p {
 	float:left;
 }
 
-
 .right-input{
 	float:right;
 }
 
-input[type="text"] {
+.short-input{
+	width: 142px !important;
+}
+
+.long-input{
+	width: 300px !important;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]  {
 	width: 142px;
 	height: 22px;
 	border-radius: 2px;
 	border: 1px solid #d5d5d5;
-	background: #fafafa;
+	background: #fafafa;	
 	margin: 0px 0px 15px 0px;
-}
 }
 
 input:focus, textarea:focus {  
-    -webkit-box-shadow: 0px 0px 5px #ff8d00;  
-    -moz-box-shadow: 0px 0px 5px #ff8d00;  
-    box-shadow: 0px 0px 5px #ff8d00;  
+    -webkit-box-shadow: 0px 0px 5px #dc8c01;  
+    -moz-box-shadow: 0px 0px 5px #dc8c01;  
+    box-shadow: 0px 0px 5px #dc8c01;  
 } 
 
 textarea{
@@ -268,8 +292,65 @@ textarea{
 	background: #fafafa;
 }
 
+[type="text"]:valid, [type="email"]:valid, [type="tel"]:valid, textarea:valid,{
+	-webkit-box-shadow: 0px 0px 5px #49ff49;  
+    -moz-box-shadow: 0px 0px 5px #49ff49; 
+	 box-shadow: 0px 0px 5px #4aff4a;  
+}
+.input-err{
+	-webkit-box-shadow: 0px 0px 5px red !important;  
+    -moz-box-shadow: 0px 0px 5px red !important; 
+	box-shadow: 0px 0px 5px red !important;  
+}
+
+
+#retour{
+	float:right; 
+	height:20px; 
+	line-height:20px;
+	display: inline-block;
+}
+
+.error, .valid{
+	border-radius: 4px;
+	padding: 0px 5px 0px 5px;
+}
+.error{
+	border: 1px solid red;
+
+	background: #ffdcdc;
+	color:red;
+}
+
+.valid{
+	border: 1px solid green;
+	background: #dcffdc;
+	color:green;
+}
+
+/*
+[type="text"]:invalid{
+	    -webkit-box-shadow: 0px 0px 5px red;  
+    -moz-box-shadow: 0px 0px 5px red; 
+	 box-shadow: 0px 0px 5px red;  
+}
+*/
+
+/*
+:required{
+	 -webkit-box-shadow: 0px 0px 5px #dc8c01;  
+    -moz-box-shadow: 0px 0px 5px #dc8c01;  
+    box-shadow: 0px 0px 5px #dc8c01;  
+}
+[required]{
+	    -webkit-box-shadow: 0px 0px 5px #dc8c01;  
+    -moz-box-shadow: 0px 0px 5px #dc8c01;  
+    box-shadow: 0px 0px 5px #dc8c01;  
+}
+*/
+
 .button {
-   border: 1px solid #adadad;
+   border: 1px solid #aeaeae;
    background: #e6e3e6;
    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#e6e3e6));
    background: -webkit-linear-gradient(top, #cccccc, #e6e3e6);
@@ -290,7 +371,11 @@ textarea{
    font-family: helvetica, serif;
    text-decoration: none;
    vertical-align: middle;
-
+	width: 100px;
+	height: 20px;
+	padding: 0px 10px 0px 10px;
+	display: block;
+/* 	line-height: 20px; */
    }
 .button:hover {
    border: 1px solid #1a7389;
@@ -325,11 +410,13 @@ footer{
 	width: 100%;
 	position : fixed;
 
-	bottom: -340px;
+	bottom: -440px;
+/* 	bottom: 0px; */
+
 	left: 0;
 	right: 0;
 
-	height: 400px;
+	height: 450px;
 	color: white;
 
 	font-size: 12px;
@@ -350,30 +437,57 @@ footer{
 	bottom:0px !important;
 }
 
+footer h3{
+	color: white;
+}
 
 
-#form{
+
+#right{
+	margin-top: 10px;
 	width: 470px;
 	clear: right;
     float: left;
     min-height: 450px;
-    background: red;
+    
+/*     background: rgba(255,0,0,0.36); */
 }
 
-#map{
-		width: 470px;
-	    clear: left;
+footer p {
+	line-height: 14px;
+	font-size: 12px;
+}
+
+#left{
+	margin-top: 10px;
+	width: 470px;
+	clear: left;
     float: left;
     min-height: 450px;
-    background: yellow;
+/*     background: rgba(0,255,52,0.22) */
 	
 }
 
+#right .content, #left .content{
+	width:300px;
+	margin: 0px auto;
+	text-align: left;
+}
+/*
 
 
-#contact{
-	position:absolute; 
-	margin:-50px 46px;
+#map{
+	position: relative;
+	margin: 0px auto;
+	text-align: center;
+}
+*/
+
+
+
+#contact {
+	position:relative; 
+	margin:-50px auto;
 	width: 100px;
 	height: 100px;
 	line-height: 100px;
@@ -382,36 +496,40 @@ footer{
 	font-weight: 400;
 	font-size: 16px;
 	font-variant: small-caps;
-	
+	cursor: pointer;
+	display: block !important;
 }
 
-/*
+
 #contact:hover{
 	background: url(../images/bt-contact.png) no-repeat; 
+/*
 
 -webkit-transform: rotate(-30deg);
 -moz-transform: rotate(-30deg);
 -o-transform: rotate(-30deg);
 transform: rotate(-30deg);
-}
 */
+}
 
 
+/*
     #contact:hover{
-    -webkit-animation: cssAnimation 2.26s 20 linear;
-    -moz-animation: cssAnimation 2.26s 20 linear;
-    -o-animation: cssAnimation 2.26s 20 linear;
+    -webkit-animation: cssAnimation 2.26s 1 linear;
+    -moz-animation: cssAnimation 2.26s 1 linear;
+    -o-animation: cssAnimation 2.26s 1 linear;
     background: url(../images/bt-contact.png) no-repeat; 
     }
     @-webkit-keyframes cssAnimation {
-    from { -webkit-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    from { -webkit-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
     to { -webkit-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
     }
     @-moz-keyframes cssAnimation {
-    from { -moz-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    from { -moz-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
     to { -moz-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
     }
     @-o-keyframes cssAnimation {
-    from { -o-transform: rotate(360deg) scale(1) skew(0deg) translate(2px); }
+    from { -o-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
     to { -o-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
     }
+*/

@@ -6,20 +6,39 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="robots" content="" />
-	<!-- <base href="http://{$smarty.server.SERVER_NAME}:8888/site/" target="_blank"> -->
+	
+	<meta property="og:title" content="TroisW agence web"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="{$smarty.const.BASE_URL}"/>
+	<meta property="og:image" content="{$smarty.const.BASE_URL}/skins/images/logo.png"/>
+	<meta property="og:description" content="En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel."/>
+	<meta property="og:site_name" content="TroisW agence web"/>
+<!--
+	<meta property="fb:admins" content="VOTRE_ID_UTILISATEUR"/>
+	<meta property="fb:app_id" content="VOTRE_ID_APPLICATION"/>
+-->
+	
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	<script src="skins/js/jquery.easing.1.3.js"></script>
-	<script src="skins/js/jquery.viewport.js"></script>
-	<link href="skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	 
+	 
+	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.easing.1.3.js"></script>
+	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.viewport.js"></script>
+	<script src="{$smarty.const.BASE_URL}/skins/js/custom.js"></script>
+	
+	<link href="{$smarty.const.BASE_URL}/skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
+<body class="{$bgClass}">
+	<!--   -->
 	
+
 	
+
+
 	<div id="wait">
 		<h1>Attends</h1>
 	</div>
-
 
 <div id="wrap" class="clearfix"  style="display:none;">
 	<header>	
@@ -28,7 +47,7 @@
 		Top
 	</div>
 	
-		<div id="logo">
+		<div id="logo"  class="ui-widget-content">
 				<a href="#art1" class="scroll"><span>Troiw-agenceweb</span></a>
 		</div>
 		
@@ -56,46 +75,64 @@
 	
 	<footer class="clearfix" id="footer">
 	
-		
-			<a href="#" id="contact">contact</a>
-		
-		
-		<div id="wrap" style="text-align:center;">
-		TroisW agence web - 62 rue Jean-Jacques Rousseau, 75002 Paris  -  <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a>  -  06 16 04 11 74 
-		
-			<h2>Contactez-nous</h2>
-			<h3>Contactez-nous pour obtenir un devis gratuit pour votre projet</h3>
+		<div id="contact">
+			<span>contact</span>
+		</div>
 			
-			<ul>
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">facebook</a></li>
-		</ul>
+				
+		<div id="wrap" style="padding:40px;">
 			
-			<div id="map">
-				<iframe width="380" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" >Agrandir le plan</a></small>
+				<h2 class="text-center">Contactez-nous</h2>
+				<h3 class="text-center">Contactez-nous pour obtenir un devis gratuit pour votre projet</h3>
+			<!--
+<ul>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">facebook</a></li>
+			</ul>
+-->
+			
+			<div id="left">
+				<div class="content">
+					
 				
 				
+					<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed" style="padding:0px; margin:0px;"></iframe>
+						
+				<small class="clearfix" style="float:right;margin:-20px 0px -20px 0px;"><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" onclick="window.open(this.href); return false;" >Agrandir le plan</a></small>
+					<p class="clearfix" style="float:left;">
+						<b>troisW agence web</b><br/>
+						62 rue Jean-Jacques Rousseau, 75002 Paris<br>
+						<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
+						<b>Mail :</b> <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a><br/>
+						<b>Tel :</b> 06 16 04 11 74
+					</p>	
+						
+				</div>
+			</div>
+			
+			<div id="right">
+				<div class="content">
+					
 				
-				<p><b>troisW agence web</b><br/>
-				62 rue Jean-Jacques Rousseau, 75002 Paris<br/>
-				<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
-				<b>Mail :</b> contact@troisw-agenceweb.com<br/>
-				<b>Tel :</b> 06 16 04 11 74</p>
+				<form action="{$smarty.const.BASE_URL}/index.php" method="post" accept-charset="utf-8" id="form-contact">
+				<input id="nom" type="text" name="nom" value="" placeholder="Nom*" class="left-input" {$required} />				
+				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom*" class="right-input" {$required} /><br>		
+				<input id="email" type="email" name="email" value="" placeholder="Email*" class="left-input" {$required}>
+				<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone" class="right-input short-input" {$required} pattern="{literal}^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}${/literal}">
+				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input long-input" {$required}>
+				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement*" id="message" {$required}></textarea>
+				
+				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button" style="float:left;">
+				
+				<span id="retour" class="clearfix"></span>
 
+				</form>
+				<div class="clearfix">	</div>
+				<span class="clearfix">(*champs obligatoires)</span>
+				</div>
 			</div>
 			
-			<div id="form">
-				<form action="index.php" method="post" accept-charset="utf-8">
-				<input id="nom" type="text" name="nom" value="" placeholder="Nom" class="left-input" required="">				
-				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom" class="right-input" required="">				
-				<input id="mail" type="text" name="mail" value="" placeholder="Mail" class="left-input" required>
-				<input id="telephone" type="text" name="telephone" value="" placeholder="Téléphone" class="right-input" required>
-				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input" required>
-				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement" required></textarea>
-				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button">
-				</form>
-				(*champs obligatoires)
-			</div>
+			
 			
 		</div>
 			 
@@ -106,132 +143,8 @@
 	<!-- <script src="skins/js/jquery.fittext.js"></script> -->
 	
 	<script type="text/javascript">
+		var baseUrl = '{$smarty.const.BASE_URL}';
 		{literal}
-		$(document).ready(function(){
-		
-			//
-			
-
-			
-			var nbArticle = $('section > article').length;
-			
-			var step = new Array();			
-			//alert( $('section').html() );
-			
-			for(var i = 1; i < nbArticle; i++){
-			var index  = 800;
-				step['art'+i] = Array(i*index, i*index); 
-			}
-			
-			
-			//alert( $('#art2').offset().top );
-			
-			var artTest = $('#art5 > #art_end');
-/* 			alert(artTest.offset().top); */
-
-			
-			
-			//
-			$("article .art_end").each(function() {
-				//alert('OK');// = message + $(this).attr("src") + "<br />";
-			});
-			
-			
-			//alert( $('article').attr('id') + ' - ' +$('#art5 > #art_end').html() );
-			
-			var step = new Array();
-			step['art1'] = Array(-300, 500);
-			step['art2'] = Array(501, 1300);
-			step['art3'] = Array(1301, 2100);
-			step['art4'] = Array(2101, 2900);
-			step['art5'] = Array(2901, 3700);
-			step['art6'] = Array(3701, 5000);
-			
-			
-			//Gestion du scroll et de la fleche
-			$(document).scroll(function(){
-				//
-				var refPosition = $('#ref').offset();	
-				$('#top').html(refPosition.top);		
-				
-				for(var i = 1; i < 7; i++){
-				
-					//step['art'+i] = Array(i*index, i*index); 
-					var array = step['art'+i];
-					var firstVal = array[0];
-					var secVal = array[1];
-					var myVal = 2990;
-					if (refPosition.top >= firstVal && refPosition.top <= secVal)
-					{
-						//alert('OK' + 'art'+i );
-						//$(".scroll a[href$='#art"+i+"']").css('background', 'red');
-						flecheMove("a[href$='#art"+i+"']");
-					}
-				}
-			});
-		
-			//
-			$( "#contact" ).toggle(function() {
-			
-				/*
-$( this).toggle(function(){
-					$(this).text('contact');
-				}, function(){
-					$(this).text('fermer');
-				});
-*/
-/* 				$( "#footer" ).toggleClass( "extendFooter", 800, 'easeOutExpo' ); */
-/* 				return false; */
-				$(this).html('fermer');
-				
-			}, function(){
-				$(this).html('contact');
-			});
-			
-		
-			$("header, section").click( function(e) {
-				if(e.target.className !== "extendFooter")
-				{
-					//$(".extendFooter").hide();
-					$('#footer').removeClass( "extendFooter", 300, 'easeOutExpo' );
-					return false;
-				}
-			});
-			
-			/*$(this).next().removeClass('open', 1800, 'easeOutExpo'); */
-			
-			//
-			
-			//$("#wrap").delay(1400).fadeIn(2000);
-			$("#wrap").fadeIn();
-			$("#wait").hide();
-			//Function de deplacement de la fleche
-			flecheMove = function(obj){
-				var anchor = $(obj);
-				var cible  = $(obj).attr('href');				
-				var anchorPosition = anchor.position().top;
-				var indexCalage = 16;
-				var anchorPositionFinal = anchorPosition-indexCalage;
-				//
-				if(cible == '#art1'){
-					anchorPositionFinal = -60;
-				}
-				$('#fleche').stop().animate({'margin-top': anchorPositionFinal+'px'}, 800, 'easeOutExpo');
-			};
-			
-			
-			//
-			$('.scroll').bind('click',function(event){
-				var anchor = $(this);
-				var cible  = $(this).attr('href');
-				//
-				$('html, body').stop().animate(
-					{scrollTop: $(cible).position().top},
-					'slow', 'easeOutExpo');
-            	event.preventDefault();
-            });		
-		});
-		
 		
 		
 		//google Analytics
