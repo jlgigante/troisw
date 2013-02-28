@@ -3,41 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>TroisW - agence web</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="robots" content="" />
-	
-	<meta property="og:title" content="TroisW agence web"/>
-	<meta property="og:type" content="article"/>
-	<meta property="og:url" content="{$smarty.const.BASE_URL}"/>
-	<meta property="og:image" content="{$smarty.const.BASE_URL}/skins/images/logo.png"/>
-	<meta property="og:description" content="En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel."/>
-	<meta property="og:site_name" content="TroisW agence web"/>
-<!--
-	<meta property="fb:admins" content="VOTRE_ID_UTILISATEUR"/>
-	<meta property="fb:app_id" content="VOTRE_ID_APPLICATION"/>
--->
-	
+
+	<meta name="title" content="TroisW agence web"/> 
+	<meta name="description" content="En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel."/>	
+	<link rel="images_src" url="{$smarty.const.BASE_URL}/skins/images/logo.png"/>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-	 
-	 
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.easing.1.3.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.viewport.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/custom.js"></script>
-	
 	<link href="{$smarty.const.BASE_URL}/skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-
 </head>
 <body class="{$bgClass}">
 	<!--   -->
-	
-
-	
-
-
 	<div id="wait">
-		<h1>Attends</h1>
+		<h1></h1>
 	</div>
 
 <div id="wrap" class="clearfix"  style="display:none;">

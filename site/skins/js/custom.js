@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	
+	$("#wrap").fadeIn();
+	$("#wait").hide();
+	
 	/*
 	var nbArticle = $('section > article').length;
 	var step = new Array();			
@@ -58,8 +62,7 @@ $(document).ready(function(){
 		}
 	});
 	//
-	$("#wrap").fadeIn();
-	$("#wait").hide();
+
 	//Function de deplacement de la fleche
 	flecheMove = function(obj){
 		var anchor = $(obj);
