@@ -13,6 +13,7 @@
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.viewport.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/custom.js"></script>
 	<link href="{$smarty.const.BASE_URL}/skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="{$smarty.const.BASE_URL}/favicon.ico" />
 </head>
 <body class="{$bgClass}">
 	<!--   -->
