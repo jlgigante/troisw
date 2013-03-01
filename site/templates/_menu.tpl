@@ -11,7 +11,7 @@
 	<dt><a href="#art5" class="scroll">ecosystème digital</a></dt>
 	<dd>[ stratégie internet, communication, réseaux sociaux ]</dd>
 	
-	<dt><a href="#art6" class="scroll">business développement</a></dt>
+	<dt><a href="#art6" class="scroll">business development</a></dt>
 	<dd>[ régie web, opération spéciale ]</dd>
 </dl>
 

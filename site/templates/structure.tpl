@@ -8,10 +8,10 @@
 	<meta name="description" content="En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel."/>	
 	<link rel="images_src" url="{$smarty.const.BASE_URL}/skins/images/logo.png"/>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.easing.1.3.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.viewport.js"></script>
-	<script src="{$smarty.const.BASE_URL}/skins/js/custom.js"></script>
+	<script src="{$smarty.const.BASE_URL}/skins/js/custom.min.js"></script>
 	<link href="{$smarty.const.BASE_URL}/skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="{$smarty.const.BASE_URL}/favicon.ico" />
 </head>
@@ -64,7 +64,7 @@
 		<div id="wrap" style="padding:40px;">
 			
 				<h2 class="text-center">Contactez-nous</h2>
-				<h3 class="text-center">Contactez-nous pour obtenir un devis gratuit pour votre projet</h3>
+				<h3 class="text-center">pour obtenir un devis gratuit</h3>
 			<!--
 <ul>
 				<li><a href="#">twitter</a></li>
