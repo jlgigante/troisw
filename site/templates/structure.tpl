@@ -11,7 +11,7 @@
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.easing.1.3.js"></script>
 	<script src="{$smarty.const.BASE_URL}/skins/js/jquery.viewport.js"></script>
-	<script src="{$smarty.const.BASE_URL}/skins/js/custom.min.js"></script>
+	<script src="{$smarty.const.BASE_URL}/skins/js/custom.js"></script>
 	<link href="{$smarty.const.BASE_URL}/skins/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="{$smarty.const.BASE_URL}/favicon.ico" />
 </head>
@@ -21,124 +21,87 @@
 		<h1></h1>
 	</div>
 
-<div id="wrap" class="clearfix"  style="display:none;">
-	<header>	
-
-	<div id="top" style="position:absolute; display:none;">
-		Top
-	</div>
-	
+<div id="wrap" class="clearfix"  style="display:none; z-index:999;">
+	<header>
+		<div id="top" style="position:absolute; display:none;">
+			Top
+		</div>
 		<div id="logo"  class="ui-widget-content">
 				<a href="#art1" class="scroll"><span>Troiw-agenceweb</span></a>
-		</div>
-		
+		</div>		
 		<div id="menu">
 			<nav>
 				{include file="_menu.tpl"}
-			</nav>
-		
-			<div id="fleche">
-			
+			</nav>		
+			<div id="fleche">			
 			</div>
 		</div>
-
 	</header>
-
-	
 	<section id="section">
 		{block name="contenu"}
 				Contenu
 		{/block}				
 	</section>
-
 </div>
 	
-	
-	<footer class="clearfix" id="footer">
-	
-		<div id="contact">
-			<span>contact</span>
-		</div>
-			
-				
-		<div id="wrap" style="padding:40px;">
-			
-				<h2 class="text-center">Contactez-nous</h2>
-				<h3 class="text-center">pour obtenir un devis gratuit</h3>
-			<!--
-<ul>
+<footer class="clearfix" id="footer">
+	<div id="contact">
+		<span>contact</span>
+	</div>
+	<div id="wrap" style="padding:40px;">
+		<h2 class="text-center">Contactez-nous</h2>
+		<h3 class="text-center">pour obtenir un devis gratuit</h3>
+		<!--
+			<ul>
 				<li><a href="#">twitter</a></li>
 				<li><a href="#">facebook</a></li>
 			</ul>
--->
-			
-			<div id="left">
-				<div class="content">
-					
-				
-				
-					<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734&amp;output=embed" style="padding:0px; margin:0px;"></iframe>
-						
+		-->
+		<div id="left">
+			<div class="content">
+				<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;ll=48.864094,2.343693&amp;spn=0.009599,0.025835&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>						
 				<small class="clearfix" style="float:right;margin:-20px 0px -20px 0px;"><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" onclick="window.open(this.href); return false;" >Agrandir le plan</a></small>
-					<p class="clearfix" style="float:left;">
-						<b>troisW agence web</b><br/>
-						62 rue Jean-Jacques Rousseau, 75002 Paris<br>
-						<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
-						<b>Mail :</b> <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a><br/>
-						<b>Tel :</b> 06 16 04 11 74
-					</p>	
-						
-				</div>
+				<p class="clearfix" style="float:left;">
+					<b>troisW agence web</b><br/>
+					62 rue Jean-Jacques Rousseau, 75002 Paris<br>
+					<b>Siège social :</b> 1 rue Jean-Pierre Timbaud, 75011 Paris<br/>
+					<b>Mail :</b> <a href="mailto:contact@troisw-agenceweb.com">contact@troisw-agenceweb.com</a><br/>
+					<b>Tel :</b> 06 16 04 11 74
+				</p>	
 			</div>
-			
-			<div id="right">
-				<div class="content">
-					
-				
+		</div>
+		<div id="right">	
+			<div class="content">
 				<form action="{$smarty.const.BASE_URL}/index.php" method="post" accept-charset="utf-8" id="form-contact">
 				<input id="nom" type="text" name="nom" value="" placeholder="Nom*" class="left-input" {$required} />				
 				<input id="prenom" type="text" name="prenom" value="" placeholder="Prénom*" class="right-input" {$required} /><br>		
 				<input id="email" type="email" name="email" value="" placeholder="Email*" class="left-input" {$required}>
 				<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone" class="right-input short-input" {$required} pattern="{literal}^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}${/literal}">
 				<input id="entreprise" type="text" name="entreprise" value="" placeholder="Entreprise" class="left-input long-input" {$required}>
-				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement*" id="message" {$required}></textarea>
-				
-				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button" style="float:left;">
-				
+				<textarea name="message" placeholder="Donnez nous quelques précisions sur votre projet et nous vous recontacterons rapidement*" id="message" {$required}></textarea>	
+				<input id="valider" type="submit" name="envoyer" value="envoyer" class="button" style="float:left;">				
 				<span id="retour" class="clearfix"></span>
-
 				</form>
 				<div class="clearfix">	</div>
 				<span class="clearfix">(*champs obligatoires)</span>
-				</div>
 			</div>
-			
-			
-			
-		</div>
-			 
-	</footer>
-	
+		</div>		
+	</div>
+</footer>
 
-	
-	<!-- <script src="skins/js/jquery.fittext.js"></script> -->
-	
-	<script type="text/javascript">
-		var baseUrl = '{$smarty.const.BASE_URL}';
-		{literal}
-		
-		
-		//google Analytics
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-38583681-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();		
-		{/literal}
-	</script>
+<script type="text/javascript">
+	var baseUrl = '{$smarty.const.BASE_URL}';
+	{literal}
+	//google Analytics
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38583681-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();		
+	{/literal}
+</script>
 </body>
 </html>

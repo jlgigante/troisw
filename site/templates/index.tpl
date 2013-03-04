@@ -69,7 +69,7 @@
 		</ul>
 	</article>
 	<article id="art6">
-		<h2 style="font-size:38px; line-height: 38px;">Business development</h2> <h3>Régie Web, Opération spéciale</h3>
+		<h2 style="font-size:46px; line-height: 38px;">Business development</h2> <h3>Régie Web, Opération spéciale</h3>
 		<p>
 			La communication digital possède l'avantage de délivrer une performance mesurable et quantifiable (visite, taux de clic, CPC,  taux de transformation, etc.) qui peut être transformée en source de revenu (pour les éditeurs de contenus par exemple).<br/>
 Habitué à travailler avec des régies et éditeurs web, <b>TroisW vous aide à identifier et mettre en place des offres commerciales pertinentes et optimisées pour transformer les visites en revenus.</b>

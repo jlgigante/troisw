@@ -6,6 +6,7 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #4b4c4c;
+	font-size: 12px;
 }
 
 .global-bg-01{
@@ -28,7 +29,7 @@ h1, h2, h3{
 
 h2 {
 	color: #dc8c01;
-	text-shadow: -1px -1px 0px rgba(0,0,0,0.7);
+/* 	text-shadow: -1px -1px 0px rgba(0,0,0,0.7); */
 	font-size: 64px;
 	text-transform: uppercase;
 	display: block;
@@ -42,7 +43,7 @@ h3{
 	
 }
 .citation{
-	color: #333333;
+	color: #b9b9b9;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 400;
@@ -98,6 +99,9 @@ a:hover{
 	text-align: center;
 }
 
+.hide{
+	display: none;
+}
 
 #wrap{
 	width:940px;
@@ -211,6 +215,7 @@ section{
 	background: url(../images/section_bg.png);
 	width:470px; 
 /* 	height:2700px;  */
+
 	float:right;
 	clear: right;
 	display: block;
@@ -408,10 +413,12 @@ textarea{
 footer{
 	/* background: #63400b; */
 	width: 100%;
+	min-width: 938px;
 	position : fixed;
 
 	bottom: -440px;
 /* 	bottom: 0px; */
+margin:0px auto;
 
 	left: 0;
 	right: 0;
@@ -421,7 +428,8 @@ footer{
 
 	font-size: 12px;
 	line-height: 38px;
-	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.69);
+/* 	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.69); */
+	box-shadow: 0px 0px 1px 1px  rgba(0,0,0,0.69);
 	/**/
 	background: -moz-linear-gradient(top,  rgba(35,21,0,0.97) 0%, rgba(67,41,2,0.97) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,21,0,0.97)), color-stop(100%,rgba(67,41,2,0.97)));
@@ -440,7 +448,6 @@ footer{
 footer h3{
 	color: white;
 }
-
 
 
 #right{
@@ -473,16 +480,6 @@ footer p {
 	margin: 0px auto;
 	text-align: left;
 }
-/*
-
-
-#map{
-	position: relative;
-	margin: 0px auto;
-	text-align: center;
-}
-*/
-
 
 
 #contact {
@@ -503,33 +500,89 @@ footer p {
 
 #contact:hover{
 	background: url(../images/bt-contact.png) no-repeat; 
-/*
-
--webkit-transform: rotate(-30deg);
--moz-transform: rotate(-30deg);
--o-transform: rotate(-30deg);
-transform: rotate(-30deg);
-*/
 }
 
 
-/*
-    #contact:hover{
-    -webkit-animation: cssAnimation 2.26s 1 linear;
-    -moz-animation: cssAnimation 2.26s 1 linear;
-    -o-animation: cssAnimation 2.26s 1 linear;
-    background: url(../images/bt-contact.png) no-repeat; 
-    }
-    @-webkit-keyframes cssAnimation {
-    from { -webkit-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
-    to { -webkit-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
-    }
-    @-moz-keyframes cssAnimation {
-    from { -moz-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
-    to { -moz-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
-    }
-    @-o-keyframes cssAnimation {
-    from { -o-transform: rotate(20deg) scale(1) skew(0deg) translate(2px); }
-    to { -o-transform: rotate(4deg) scale(1) skew(0deg) translate(10px); }
-    }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)  {
+
+	
+
+	#wrap{
+		width:100%;
+		height:100%;
+		margin: 0px auto;
+	}
+	
+	header{
+
+		float: left;
+		clear: left;
+/* 		top:0px; */
+		width: 300px;
+		height:100%;
+		padding: 0px 0px 0px 0px;
+		background: #3c8fa2;
+		position:fixed;
+/* 		box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.69); */
+/* 		border-right: 1px solid rgba(66,65,65,0.54); */
+		/* 	text-align: right; */
+	}
+
+	section{
+		clear:both;
+		width: 100%;		
+		float: right;
+	}
+	
+	/**/
+	nav{
+		float: left;
+			clear: both;
+		width: 100%;
+		max-width: 290px;
+		font-size: 28px;
+		color: white;
+		font-variant: small-caps;
+		/* 	background: red; */
+		overflow: hidden;
+/* 		float: left; */
+		padding: 0px;
+		margin: 0px;
+		display: inline-block;
+	}
+
+	nav a {
+		color:white !important;
+	}
+
+
+	dt{
+	/* 	background: black; */
+		text-align: right;
+		width: 100%;
+		margin: 0px;
+		padding: 0;
+	
+	}
+	dd{
+		display: none;
+		/*
+	
+		clear:right;
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+		margin-left:400px;
+		font-weight: 200;
+		font-size: 15px;
+		white-space: nowrap;
+		opacity: 0;
 */
+		}
+
+	
+}
+
+
+
