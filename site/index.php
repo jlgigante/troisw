@@ -1,9 +1,6 @@
 <?php
 require_once("include/conf.php");
 require_once(LIBS.'Utils.class.php');
-
-
-
 $param = $_POST;
 
 if( isset($param) and !empty($param) )
@@ -17,8 +14,8 @@ if( isset($param) and !empty($param) )
 	$errors['nom'] = ( !isset($param['nom']) or empty($param['nom']) ) ? 'Nom invalide' : false;
 	$errors['prenom'] = ( !isset($param['prenom']) or empty($param['prenom']) ) ? 'Prenom invalide' : false;
 	$errors['email'] = ( !isset($param['email']) or empty($param['email']) ) ? 'Email invalide' : false;
-	$errors['telephone'] = ( !isset($param['telephone']) or empty($param['telephone']) ) ? 'Téléphone invalide' : false;
-	$errors['entreprise'] = ( !isset($param['entreprise']) or empty($param['entreprise']) ) ? 'Entreprise invalide' : false;
+/* 	$errors['telephone'] = ( !isset($param['telephone']) or empty($param['telephone']) ) ? 'Téléphone invalide' : false; */
+/* 	$errors['entreprise'] = ( !isset($param['entreprise']) or empty($param['entreprise']) ) ? 'Entreprise invalide' : false; */
 	$errors['message'] = ( !isset($param['message']) or empty($param['message']) ) ? 'Message invalide' : false;
 	//var_dump($errors);
 	

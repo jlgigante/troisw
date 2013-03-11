@@ -3,6 +3,9 @@ $(document).ready(function(){
 	$("#wrap").fadeIn();
 	$("#wait").hide();
 	
+/* 	$("#map").hide(); */
+	
+	
 	/*
 	var nbArticle = $('section > article').length;
 	var step = new Array();			
@@ -38,6 +41,9 @@ $(document).ready(function(){
 		
 	//Gestion du footer contact
 	$( "#contact" ).click(function(e) {
+		//Affichage de la carte
+		$("#map").removeClass('hide');
+		//
 		var textBt = $('#contact span');
 		var textBtVal = 'contact'; 
 		//

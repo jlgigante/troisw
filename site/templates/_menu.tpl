@@ -11,22 +11,12 @@
 	<dt><a href="#art5" class="scroll">ecosystème digital</a></dt>
 	<dd>[ stratégie internet, communication, réseaux sociaux ]</dd>
 	
-	<dt><a href="#art6" class="scroll">business développement</a></dt>
+	<dt><a href="#art6" class="scroll">business development</a></dt>
 	<dd>[ régie web, opération spéciale ]</dd>
 </dl>
-
-
-
 <script type="text/javascript">
 	{literal}
 	$(document).ready(function(){ 
-		//alert( $('dt:nth-child(1n+2)').html() );
-		
-		//compte le nb d'item menu permier niveau
-		//var nbMenuItem = $('dl dt > *').length;
-		//alert(nbMenuItem);
-		
-		
 		$('dt').hover(function(){			
 			$(this).next().stop().animate({'margin-left':'0px', 'opacity':1}, 800, 'easeOutExpo');
 		}, function(){			
