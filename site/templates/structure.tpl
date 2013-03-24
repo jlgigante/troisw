@@ -56,8 +56,12 @@
 =======
 							<div id="infos" class="infos-{$smarty.section.foo.index}">
 								<p>
+<<<<<<< HEAD
 								{$mea[foo].titre} -
 >>>>>>> diapo home
+=======
+								{$mea[foo].titre} - {$smarty.section.foo.index} 
+>>>>>>> diapo
 								</p>
 								<p class="suite">
 									<a href="{$mea[foo].url}">voire l'article</a>
