@@ -6,7 +6,7 @@ $(document).ready(function(){
 /* 	$("#map").hide(); */
 	
 	
-	
+
 	var nbArticle = $('section > article').length;
 	var start = -300;
 	var index  = 800;
