@@ -72,6 +72,7 @@ if( isset($param) and !empty($param) )
 
 
 
+<<<<<<< HEAD
 $mea = array(
 	array(
 		'titre' => 'Titre 1',
@@ -79,10 +80,40 @@ $mea = array(
 	),
 	array(),
 	array(),
+=======
+
+/**
+ * ELements du bloc de mise en avant 
+ */
+$mea = array(
+		array(
+			"titre" => "Jeu concours Call of Duty sur Jeuvideo.com",
+			"url_vignette" => PROD_BASE_URL_MEDIA_BLOG . "2013/03/300x225-cod.jpg",
+			"url" => PROD_BASE_URL_BLOG . "jeu-concours-call-of-duty-sur-jeuvideo-com/",
+		), 
+		
+		array(
+			"titre" => "Livret recettes Cassegrain sur 750g.com",
+			"url_vignette" => PROD_BASE_URL_MEDIA_BLOG . "2013/03/300x225-cassegrain.jpg",
+			"url" => PROD_BASE_URL_BLOG . "livret-recettes-pour-cassegrain-sur-750g-com/",
+		),
+		
+		array(
+			"titre" => "Jeu concours Call of Duty sur Jeuvideo.com",
+			"url_vignette" => PROD_BASE_URL_MEDIA_BLOG . "2013/03/300x225-hunger.jpg",
+			"url" => PROD_BASE_URL_BLOG . "jeu-concours-hunger-games-sur-skyrock-com/",
+		),
+		
+		array(
+			"titre" => "Jeu concours Securite routiere sur Skyrock.com",
+			"url_vignette" => PROD_BASE_URL_MEDIA_BLOG . "2013/03/300x225-mur-de-sam.jpg",
+			"url" => PROD_BASE_URL_BLOG . "jeu-concours-securite-routiere-sur-skyrock-com/",
+		),
+		
+>>>>>>> diapo home
 );
 
-
-
+$smarty->assign("mea", $mea);
 
 
 $citations = array(

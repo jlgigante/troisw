@@ -15,6 +15,11 @@ $(document).ready(function(){
 	});
 */
 	
+<<<<<<< HEAD
+=======
+
+	
+>>>>>>> diapo home
 	overInfos = function(obj){
 		
 		//return false;

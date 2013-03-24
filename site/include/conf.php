@@ -18,5 +18,12 @@ else
 }
 
 
+/**
+ * Pour le systeme de vignette
+ */
+define("PROD_BASE_URL", "http://troisw-agenceweb.com/");
+define("PROD_BASE_URL_BLOG", PROD_BASE_URL . "blog/");
+define("PROD_BASE_URL_MEDIA_BLOG", PROD_BASE_URL_BLOG . "wp-content/uploads/");
+
 
 define('SERVER_NAME', $_SERVER['SERVER_NAME']);

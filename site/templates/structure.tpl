@@ -49,9 +49,15 @@
 <!-- 								<img src="{$mea[foo].url_vignette}" alt="" title="{$mea[foo].titre}" style="width:100%; height:100%;" /> -->
 							</div>
 							
+<<<<<<< HEAD
 							<div id="infos" class="infos">
 								<p>
 								{$mea[foo].titre} - 
+=======
+							<div id="infos" class="infos-{$smarty.section.foo.index}">
+								<p>
+								{$mea[foo].titre} -
+>>>>>>> diapo home
 								</p>
 								<p class="suite">
 									<a href="{$mea[foo].url}">voire l'article</a>
