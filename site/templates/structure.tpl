@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>TroisW - agence web</title>
-
 	<meta name="title" content="TroisW agence web"/> 
 	<meta name="description" content="En favorisant l'interactivité, la conversation et la viralité avec les consommateurs, le digital est plus que jamais au coeur de la communication des annonceurs et des marques. A la fois agence conseil, agence créative et studio de production, TroisW vous accompagne dans la réalisation de tous vos projets web, qu’ils prennent la forme d’une campagne pub, d’un site vitrine ou d’un jeu concours événementiel."/>	
 	<link rel="images_src" url="{$smarty.const.BASE_URL}/skins/images/logo.png"/>
