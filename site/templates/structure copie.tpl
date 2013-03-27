@@ -29,39 +29,15 @@
 		<div id="top" style="position:absolute; display:none;">
 			Top
 		</div>
-	
+
 				<a href="#art1" class="scroll ui-widget-content" id="logo"><img src="{$smarty.const.BASE_URL}/skins/images/logo.png" alt="Troiw-agenceweb"  ></a>
 	
 		<div id="menu">
 			<nav>
 				{include file="_menu.tpl"}
-			</nav>			
+			</nav>		
 			<div id="fleche">			
 			</div>
-		</div>
-		
-		<div id="mea">
-			<ul>
-				{section name=foo loop=$mea}
-					<li>
-						<div id="content">
-							<div id="vignette" class="vignette" style="background-image:url({$mea[foo].url_vignette});">
-<!-- 								<img src="{$mea[foo].url_vignette}" alt="" title="{$mea[foo].titre}" style="width:100%; height:100%;" /> -->
-							</div>
-							
-							<div id="infos" class="infos">
-								<p>
-								{$mea[foo].titre} - 
-								</p>
-								<p class="suite">
-									<a href="{$mea[foo].url}">voire l'article</a>
-								</p>
-							</div>
-							
-						</div>
-					</li>
-				{/section}				
-			</ul>
 		</div>
 	</header>
 	<section id="section">
@@ -86,7 +62,7 @@
 		-->
 		<div id="left">
 			<div class="content">
-				<!-- <iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;ll=48.864094,2.343693&amp;spn=0.009599,0.025835&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>	 -->					
+				<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;ll=48.864094,2.343693&amp;spn=0.009599,0.025835&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>						
 				<small class="clearfix" style="float:right;margin:-20px 0px -20px 0px;"><a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=62+Rue+Jean-Jacques+Rousseau,+Paris&amp;aq=1&amp;oq=62+rue+jean&amp;sll=48.680793,2.502588&amp;sspn=2.567931,3.339844&amp;ie=UTF8&amp;hq=&amp;hnear=62+Rue+Jean-Jacques+Rousseau,+75001+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.864089,2.343734" onclick="window.open(this.href); return false;" >Agrandir le plan</a></small>
 				<p class="clearfix" style="float:left;">
 					<b>troisW agence web</b><br/>

@@ -3,72 +3,67 @@ $(document).ready(function(){
 	$("#wrap").fadeIn();
 	$("#wait").hide();
 	
+	
+	//$("#mea ul li #content > #infos").hide();
+	
+/*
+	$("#mea ul li #content ").hover(function(){
+		//alert($(this).next().attr('class'));
+		$(this).prev().toggle();
+
+		
+	});
+*/
+	
+	overInfos = function(obj){
+		
+		//return false;
+	}
+	
+	
+	$("#mea ul li #content .vignette").hover(function(){
+	
+		//alert( $(this).prev().attr("class") );
+		var infos = $(this).next().attr("class");
+		
+		$("."+infos).toggle();
+		//overInfos(this);
+	});
+	
+	
+	
 /* 	$("#map").hide(); */
 	
 	
-
-	var nbArticle = $('section > article').length;
-	var start = -300;
-	var index  = 800;
-	
-	var step = new Array();			
-	for(var i = 1; i <= nbArticle; i++){
-			
-		if(begin)
-			var begin = begin+index;
-		else
-			var begin = start;		
-		//var newStart = i*start;
-		var end = begin+index;
-		
-		step['art'+i] = Array(begin+1, end);
-		//alert(step['art'+i]);
-	}
-	//alert(step['art1']);
-	
-	//Function de deplacement de la fleche
-	flecheMove = function(obj, index){
-		var anchor = $(obj);
-		var cible  = $(obj).attr('href');				
-		var anchorPosition = anchor.position().top;
-		var indexCalage = 16;
-		var anchorPositionFinal = anchorPosition-indexCalage;
-		//
-		if(cible == '#art1'){
-			anchorPositionFinal = -60;
-		}
-		$('#fleche').stop().animate({'margin-top': '0px'}, index, 'easeOutExpo');
-	};
-			flecheMove("a[href$='#art6']", 1000);
 	/*
-var step = new Array();
+	var nbArticle = $('section > article').length;
+	var step = new Array();			
+	for(var i = 1; i < nbArticle; i++){
+		var index  = 800;
+		step['art'+i] = Array(i*index, i*index); 
+	}
+	*/
+	var step = new Array();
 	step['art1'] = Array(-300, 500);
-	step['art2'] = Array(500, 1300);
-	step['art3'] = Array(1300, 2100);
-	step['art4'] = Array(2100, 2900);
-	step['art5'] = Array(2900, 3700);
-	step['art6'] = Array(3700, 5000);
-*/
-
-	//alert(step['art1']);
+	step['art2'] = Array(501, 1300);
+	step['art3'] = Array(1301, 2100);
+	step['art4'] = Array(2101, 2900);
+	step['art5'] = Array(2901, 3700);
+	step['art6'] = Array(3701, 5000);
+	
 	//Gestion du scroll et de la fleche
 	$(document).scroll(function(){
 		//
 		var refPosition = $('#ref').offset();	
 		$('#top').html(refPosition.top);		
 		//				
-		for(var i = 1; i <= nbArticle; i++){
-			
-			//var array = step['art'+i];
-			
-			//alert(step['art'+i][0]);
-			/*
-var firstVal = ;
-			var secVal = ;
-*/
-			//var myVal = 2990;
-			if (refPosition.top >= step['art'+i][0] && refPosition.top <= step['art'+i][1]) {
-				flecheMove("a[href$='#art"+i+"']", index);
+		for(var i = 1; i < 7; i++){
+			var array = step['art'+i];
+			var firstVal = array[0];
+			var secVal = array[1];
+			var myVal = 2990;
+			if (refPosition.top >= firstVal && refPosition.top <= secVal) {
+				flecheMove("a[href$='#art"+i+"']");
 			}
 		}
 	});
@@ -82,7 +77,7 @@ var firstVal = ;
 		var textBtVal = 'contact'; 
 		//
 		textBt.hide();
-		//
+/* 		alert(textBt.html());		 */
 		if(textBt.html() === textBtVal ){
 			textBt.html('fermer').fadeIn();
 		}
@@ -104,7 +99,7 @@ var firstVal = ;
 	//
 
 	//Function de deplacement de la fleche
-	flecheMove = function(obj, index){
+	flecheMove = function(obj){
 		var anchor = $(obj);
 		var cible  = $(obj).attr('href');				
 		var anchorPosition = anchor.position().top;
@@ -114,10 +109,8 @@ var firstVal = ;
 		if(cible == '#art1'){
 			anchorPositionFinal = -60;
 		}
-		$('#fleche').stop().animate({'margin-top': anchorPositionFinal+'px'}, index, 'easeOutExpo');
+		$('#fleche').stop().animate({'margin-top': anchorPositionFinal+'px'}, 800, 'easeOutExpo');
 	};
-	
-	
 	//
 	$('.scroll').bind('click',function(event){
 		var anchor = $(this);
@@ -129,7 +122,7 @@ var firstVal = ;
 			event.preventDefault();
 	});		
 
-	//FORMULAIRE
+	//
 	$("#form-contact").submit(function() {
 			$("#retour").fadeOut(100).hide();
 			//
