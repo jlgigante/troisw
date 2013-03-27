@@ -3,7 +3,6 @@ $(document).ready(function(){
 	$("#wrap").fadeIn();
 	$("#wait").hide();
 	
-	
 	//$("#mea ul li #content > #infos").hide();
 	
 /*

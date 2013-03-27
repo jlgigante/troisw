@@ -29,7 +29,6 @@
 		<div id="top" style="position:absolute; display:none;">
 			Top
 		</div>
-	
 				<a href="#art1" class="scroll ui-widget-content" id="logo"><img src="{$smarty.const.BASE_URL}/skins/images/logo.png" alt="Troiw-agenceweb"  ></a>
 	
 		<div id="menu">

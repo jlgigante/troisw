@@ -115,7 +115,7 @@ $mea = array(
 
 $smarty->assign("mea", $mea);
 
-
+//
 $citations = array(
 				array('citation' => 'La réponse est oui. Mais quelle était la question ? ', 'auteur'=>'Woody Allen'),
 				array('citation'=>'Nous avons des questions à toutes vos réponses.', 'auteur'=>'Woody Allen'),
