@@ -6,6 +6,7 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #4b4c4c;
+
 	font-size: 0.75em;
 }
 
@@ -27,6 +28,8 @@ body{
 }
 
 
+
+
 h1, h2, h3{
 	margin: 0px 0px 10px 0px;
 	padding: 0px;
@@ -35,6 +38,7 @@ h1, h2, h3{
 h2 {
 	color: #dc8c01;
 /* 	text-shadow: -1px -1px 0px rgba(0,0,0,0.7); */
+
 	font-size: 5em; /*64px;*/
 	text-transform: uppercase;
 	display: block;
@@ -50,6 +54,7 @@ h3{
 }
 .citation{
 	color: #b9b9b9;
+
 	font-size: 1.5em;
 	font-style: italic;
 	font-weight: 400;
@@ -148,7 +153,7 @@ header{
 /* 	background: green; */
 
 	width: 500px;
-	height: 280px;
+	height: 400px;
 	
 		
 	position: relative;
@@ -213,78 +218,6 @@ dd{
 	margin: -60px 0px;
 	float: right;
 	
-}
-
-#mea {
-	background: red;
-	float: right;
-	width: auto;
-	height:222px;
-	overflow: hidden;
-}
-
-#mea ul {
-	padding: 0px;
-	margin: 0px;
-/* 	float: right; */
-/* 	background: yellow; */
-	width:292px;
-	
-}
-
-#mea li {
-	width:128px;
-	height: 93px;
-	background: white;
-	list-style: none;
-	float: left;
-	margin: 0px 0px 10px 10px;
-	padding: 3px;
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.69);
-	overflow: hidden;
-}
-
-#mea li #content{
-	width: 128px;
-	height: 93px;
-	overflow: hidden;
-}
-
-#mea li #content #vignette{
-	position: absolute;
-	margin: 0;
-	width: 128px;
-	height: 93px;
-	background-size: 128px 93px; 
-	background-position:center;
-/* 	background: red; */
-}
-#mea li #content #infos{
-	position: absolute;
-	margin: 0px 0px;
-	padding: 3px;
-	width: 322px;
-	height: 87px;
-	background: rgba(3,3,3,0.70);
-	display: block;
-}
-
-
-
-#mea li #content #infos p {
-		overflow: hidden;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		color: white;
-}
-
-.suite {
-/* 	background: red; */
-	position: absolute;
-	width: 95% !important;
-	bottom: 0;
-	text-align: right;
 }
 
 /**/
@@ -452,7 +385,7 @@ textarea{
    -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    text-shadow: #ffffff 0 1px 0;
-   color: #524a4a;
+   color: #454343;
    font-size: 13px;
    font-family: helvetica, serif;
    text-decoration: none;
@@ -519,7 +452,7 @@ margin:0px auto;
 	background: -ms-linear-gradient(top,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
 	background: linear-gradient(to bottom,  rgba(35,21,0,0.97) 0%,rgba(67,41,2,0.97) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7231500', endColorstr='#f7432902',GradientType=0 );
-
+/* 	font-weight: 400; */
 }
 
 .extendFooter{
@@ -582,6 +515,7 @@ footer p {
 #contact:hover{
 	background: url(../images/bt-contact.png) no-repeat; 
 }
+
 
 
 /* @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)   */
@@ -706,7 +640,7 @@ footer p {
 		opacity: 0;
 */
 		}
-		
+
 		
 	
 	
@@ -827,5 +761,4 @@ footer p {
 		}
 
 }
-
 
