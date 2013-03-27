@@ -73,6 +73,7 @@ if( isset($param) and !empty($param) )
 
 
 
+
 /**
  * ELements du bloc de mise en avant 
  */
