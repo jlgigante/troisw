@@ -13,15 +13,7 @@ $(document).ready(function(){
 		
 	});
 */
-	
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-	
->>>>>>> diapo home
-=======
->>>>>>> diapo
 	overInfos = function(obj){
 		
 		//return false;

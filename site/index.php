@@ -72,15 +72,6 @@ if( isset($param) and !empty($param) )
 
 
 
-<<<<<<< HEAD
-$mea = array(
-	array(
-		'titre' => 'Titre 1',
-		'url'
-	),
-	array(),
-	array(),
-=======
 
 /**
  * ELements du bloc de mise en avant 
@@ -110,7 +101,7 @@ $mea = array(
 			"url" => PROD_BASE_URL_BLOG . "jeu-concours-securite-routiere-sur-skyrock-com/",
 		),
 		
->>>>>>> diapo home
+
 );
 
 $smarty->assign("mea", $mea);

@@ -1,7 +1,6 @@
 <?php
 include("include/smarty_conf.php");
 
-
 if($_SERVER['SERVER_NAME'] == 'troisw.loc')
 {
 	define('LIBS', '/Users/jlgigante/Sites/libs/');
